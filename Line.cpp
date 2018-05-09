@@ -6,7 +6,7 @@
 #include <algorithm>
 using std::swap;
 
-void Line::drawLineMidpoint(HDC hdc, COLORREF c, int xs, int xe, int ys, int ye) {
+void Line::drawLineMidpoint(HDC hdc) {
     int counter = 1;
     int dx = xe - xs;
     int dy = ye - ys;
@@ -69,7 +69,7 @@ void Line::drawLineMidpoint(HDC hdc, COLORREF c, int xs, int xe, int ys, int ye)
 
 }
 
-void Line::drawLineCartesian(HDC hdc, COLORREF c, int xs, int xe, int ys, int ye) {
+void Line::drawLineCartesian(HDC hdc) {
     int dy = ye - ys;
     int dx = xe - xs;
     if(dy == 0 && dx == 0){
@@ -105,7 +105,7 @@ void Line::drawLineCartesian(HDC hdc, COLORREF c, int xs, int xe, int ys, int ye
     }
 }
 
-void Line::drawLineDDA(HDC hdc, COLORREF c, int xs, int xe, int ys, int ye) {
+void Line::drawLineDDA(HDC hdc) {
     int dx = xe - xs;
     int dy = ye - ys;
     if(xe == xs && ye == ys){
@@ -139,4 +139,30 @@ void Line::drawLineDDA(HDC hdc, COLORREF c, int xs, int xe, int ys, int ye) {
             y = y + m;
         }
     }
+}
+
+Line::Line(int xs, int xe, int ys, int ye, COLORREF c):xs(xs), ys(ys), xe(xe), ye(ye), c(c) {
+
+}
+
+void Line::draw(HDC hdc) {
+    if(xs >= 0) {
+        drawLineMidpoint(hdc);
+    }
+}
+
+void Line::write(ofstream &out) {
+    out.write((char*)& xs, sizeof(xs));
+    out.write((char*) &ys, sizeof(xs));
+    out.write((char*) &xe, sizeof(xs));
+    out.write((char*) &ye, sizeof(xs));
+    out.write((char*) &c, sizeof(c));
+}
+
+void Line::read(ifstream &in) {
+    in.read((char*) &xs, sizeof(xs));
+    in.read((char*) &ys, sizeof(xs));
+    in.read((char*) &xe, sizeof(xs));
+    in.read((char*) &ye, sizeof(xs));
+    in.read((char*) &c, sizeof(xs));
 }

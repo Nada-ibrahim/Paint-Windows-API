@@ -6,7 +6,8 @@
 #define UNTITLED1_CLIPPING_H
 
 #include "MyPoint.h"
-#include "EndpointsBuffer.h"
+#include "ShapeBuffer.h"
+#include "Poly.h"
 
 union outcode{
     unsigned all:4;
@@ -24,8 +25,18 @@ public:
     int xr;
     int yt;
     int yb;
-    void clip(MyPoint d1, MyPoint d2, EndpointsBuffer &lines, HDC hdc, COLORREF c);
+    void clip(MyPoint d1, MyPoint d2, ShapeBuffer &buffer, HDC hdc);
     pair<outcode , outcode> getOutCode(MyPoint ps, MyPoint pe);
+
+    Poly clipLeft(Poly, HDC hdc);
+
+    Poly clipRight(Poly pin, HDC hdc);
+
+    Poly clipTop(Poly pin, HDC hdc);
+
+    Poly clipBottom(Poly pin, HDC hdc);
+
+    void polygonClip(MyPoint d1, MyPoint d2, ShapeBuffer &buffer, HDC hdc);
 };
 
 

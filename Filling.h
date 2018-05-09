@@ -7,10 +7,18 @@
 
 
 #include <afxres.h>
-
-class Filling {
+#include "Shape.h"
+class Filling: public Shape{
+    int xc, yc;
+    COLORREF backColor, fillColor;
 public:
-    void fillSeed(COLORREF fillColor, COLORREF boundColor , HDC hdc, int xc, int yc);
+    Filling(int xc, int yc, COLORREF backColor, COLORREF fillColor);
+    void fillSeed(HDC hdc);
+    void draw(HDC hdc);
+    void write(ofstream& out);
+    void read(ifstream &in);
+
+    Filling();
 };
 
 

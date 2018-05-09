@@ -1,0 +1,186 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/c++ sessions/untitled1/BezierCurve.cpp
+BezierCurve.h
+D:/c++ sessions/untitled1/BezierCurve.h
+
+D:/c++ sessions/untitled1/BezierCurve.h
+Shape.h
+D:/c++ sessions/untitled1/Shape.h
+MyPoint.h
+D:/c++ sessions/untitled1/MyPoint.h
+vector
+-
+
+D:/c++ sessions/untitled1/Circle.cpp
+Circle.h
+D:/c++ sessions/untitled1/Circle.h
+math.h
+-
+
+D:/c++ sessions/untitled1/Circle.h
+windows.h
+-
+Shape.h
+D:/c++ sessions/untitled1/Shape.h
+
+D:/c++ sessions/untitled1/Clipping.cpp
+cmath
+-
+Clipping.h
+D:/c++ sessions/untitled1/Clipping.h
+Line.h
+D:/c++ sessions/untitled1/Line.h
+
+D:/c++ sessions/untitled1/Clipping.h
+MyPoint.h
+D:/c++ sessions/untitled1/MyPoint.h
+ShapeBuffer.h
+D:/c++ sessions/untitled1/ShapeBuffer.h
+Poly.h
+D:/c++ sessions/untitled1/Poly.h
+
+D:/c++ sessions/untitled1/File.cpp
+File.h
+D:/c++ sessions/untitled1/File.h
+windows.h
+D:/c++ sessions/untitled1/windows.h
+ShapeBuffer.h
+D:/c++ sessions/untitled1/ShapeBuffer.h
+Line.h
+D:/c++ sessions/untitled1/Line.h
+Circle.h
+D:/c++ sessions/untitled1/Circle.h
+BezierCurve.h
+D:/c++ sessions/untitled1/BezierCurve.h
+Filling.h
+D:/c++ sessions/untitled1/Filling.h
+Poly.h
+D:/c++ sessions/untitled1/Poly.h
+HermiteCurve.h
+D:/c++ sessions/untitled1/HermiteCurve.h
+fstream
+-
+
+D:/c++ sessions/untitled1/File.h
+afxres.h
+-
+ShapeBuffer.h
+D:/c++ sessions/untitled1/ShapeBuffer.h
+
+D:/c++ sessions/untitled1/Filling.cpp
+Filling.h
+D:/c++ sessions/untitled1/Filling.h
+MyPoint.h
+D:/c++ sessions/untitled1/MyPoint.h
+stack
+-
+
+D:/c++ sessions/untitled1/Filling.h
+afxres.h
+-
+Shape.h
+D:/c++ sessions/untitled1/Shape.h
+
+D:/c++ sessions/untitled1/HermiteCurve.cpp
+HermiteCurve.h
+D:/c++ sessions/untitled1/HermiteCurve.h
+
+D:/c++ sessions/untitled1/HermiteCurve.h
+MyPoint.h
+D:/c++ sessions/untitled1/MyPoint.h
+Shape.h
+D:/c++ sessions/untitled1/Shape.h
+vector
+-
+
+D:/c++ sessions/untitled1/Line.cpp
+Line.h
+D:/c++ sessions/untitled1/Line.h
+algorithm
+-
+
+D:/c++ sessions/untitled1/Line.h
+windows.h
+-
+Shape.h
+D:/c++ sessions/untitled1/Shape.h
+
+D:/c++ sessions/untitled1/MyMenu.h
+
+D:/c++ sessions/untitled1/MyPoint.cpp
+MyPoint.h
+D:/c++ sessions/untitled1/MyPoint.h
+
+D:/c++ sessions/untitled1/MyPoint.h
+
+D:/c++ sessions/untitled1/Poly.cpp
+Poly.h
+D:/c++ sessions/untitled1/Poly.h
+Line.h
+D:/c++ sessions/untitled1/Line.h
+
+D:/c++ sessions/untitled1/Poly.h
+Shape.h
+D:/c++ sessions/untitled1/Shape.h
+MyPoint.h
+D:/c++ sessions/untitled1/MyPoint.h
+vector
+-
+
+D:/c++ sessions/untitled1/Shape.cpp
+Shape.h
+D:/c++ sessions/untitled1/Shape.h
+
+D:/c++ sessions/untitled1/Shape.h
+afxres.h
+-
+fstream
+-
+
+D:/c++ sessions/untitled1/ShapeBuffer.cpp
+ShapeBuffer.h
+D:/c++ sessions/untitled1/ShapeBuffer.h
+Line.h
+D:/c++ sessions/untitled1/Line.h
+
+D:/c++ sessions/untitled1/ShapeBuffer.h
+vector
+-
+windows.h
+-
+MyPoint.h
+D:/c++ sessions/untitled1/MyPoint.h
+Shape.h
+D:/c++ sessions/untitled1/Shape.h
+
+D:/c++ sessions/untitled1/main.cpp
+windows.h
+-
+Line.h
+D:/c++ sessions/untitled1/Line.h
+MyMenu.h
+D:/c++ sessions/untitled1/MyMenu.h
+Circle.h
+D:/c++ sessions/untitled1/Circle.h
+Filling.h
+D:/c++ sessions/untitled1/Filling.h
+ShapeBuffer.h
+D:/c++ sessions/untitled1/ShapeBuffer.h
+Clipping.h
+D:/c++ sessions/untitled1/Clipping.h
+File.h
+D:/c++ sessions/untitled1/File.h
+Poly.h
+D:/c++ sessions/untitled1/Poly.h
+BezierCurve.h
+D:/c++ sessions/untitled1/BezierCurve.h
+HermiteCurve.h
+D:/c++ sessions/untitled1/HermiteCurve.h
+

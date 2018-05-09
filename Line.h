@@ -6,11 +6,21 @@
 #define UNTITLED1_LINE_H
 
 #include <windows.h>
-class Line {
+#include "Shape.h"
+class Line : public Shape{
 public:
-    void drawLineMidpoint(HDC hdc, COLORREF c, int xs, int xe, int ys, int ye);
-    void drawLineCartesian(HDC hdc, COLORREF c, int xs, int xe, int ys, int ye);
-    void drawLineDDA(HDC hdc, COLORREF c, int xs, int xe, int ys, int ye);
+    int xs, xe, ys, ye;
+    COLORREF c;
+
+    Line(){}
+    Line(int xs, int xe, int ys, int ye, COLORREF c);
+    void drawLineMidpoint(HDC hdc);
+    void drawLineCartesian(HDC hdc);
+    void drawLineDDA(HDC hdc);
+    void draw(HDC hdc);
+    void write(ofstream &out);
+    void read(ifstream &in);
+
 };
 
 

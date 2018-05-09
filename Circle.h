@@ -6,12 +6,21 @@
 #define UNTITLED1_CIRCLE_H
 
 #include <windows.h>
-
-class Circle {
+#include "Shape.h"
+class Circle: public Shape {
+    int xc, yc, xr, yr;
+    COLORREF c;
 public:
-    void drawCircleMidpoint(HDC hdc, COLORREF c, int xc, int yc, int xr, int yr);
-    void drawCircleCartesian(HDC hdc, COLORREF c, int xc, int yc, int xr, int yr);
-    void draw8Points(HDC hdc , int x, int y, int xc, int yc, COLORREF c);
+    Circle(int xc, int yc, int xr, int yr, COLORREF c);
+    void drawCircleMidpoint(HDC hdc);
+    void drawCircleCartesian(HDC hdc);
+    void drawCirclePolar(HDC hdc);
+    void draw8Points(HDC hdc, int x, int y);
+    void draw(HDC hdc);
+    void write(ofstream& out);
+    void read(ifstream &in);
+
+    Circle();
 };
 
 
